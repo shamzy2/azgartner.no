@@ -72,25 +72,25 @@ export default function KontaktPage() {
           </div>
         </section>
 
-        <section className="mt-24 grid gap-6 min-[500px]:grid-cols-2 lg:grid-cols-3">
+        <section className="mt-16 grid grid-cols-1 gap-3 md:mt-24 md:grid-cols-2 md:gap-6 lg:grid-cols-3">
           {channels.map((channel) => (
             <article
               key={channel.label}
-              className="flex h-full flex-col gap-6 rounded-lg bg-white p-2"
+              className="flex h-full w-full flex-col gap-3 rounded-lg bg-white p-1.5 md:gap-6 md:p-2"
             >
-              <div className="flex flex-1 flex-col gap-[7px] px-6 pt-6">
+              <div className="flex flex-1 flex-col gap-1 px-4 pt-4 md:gap-[7px] md:px-6 md:pt-6">
                 <p className={`text-[#007D4B] ${mono}`}>{channel.label}</p>
                 <h2 className="text-[24px] leading-[25.92px] tracking-[-0.72px]">
                   {channel.title}
                 </h2>
-                <p className={`max-w-[320px] text-black/60 ${body}`}>{channel.text}</p>
+                <p className={`text-black/60 md:max-w-[320px] ${body}`}>{channel.text}</p>
               </div>
               <a
                 href={channel.href}
                 {...(channel.href.startsWith("http")
                   ? { target: "_blank", rel: "noopener noreferrer" }
                   : {})}
-                className={`mt-auto inline-flex items-center justify-center rounded-full border border-[#007D4B] px-6 pt-[13px] pb-4 text-[#007D4B] transition-colors duration-200 hover:bg-[#007D4B] hover:text-white ${body}`}
+                className={`mt-auto inline-flex w-full items-center justify-center rounded-full border border-[#007D4B] px-6 py-2.5 text-[#007D4B] transition-colors duration-200 hover:bg-[#007D4B] hover:text-white md:pt-[13px] md:pb-4 ${body}`}
               >
                 {channel.action}
               </a>

@@ -132,7 +132,7 @@ export function SiteHeader() {
         </div>
       </div>
       {open ? (
-        <div className="flex flex-col items-center gap-6 border-t border-black/10 px-6 py-8 lg:hidden">
+        <div className="absolute inset-x-0 top-full z-30 flex flex-col items-center gap-6 border-b border-black/10 bg-[#f2f1ed] px-6 py-8 lg:hidden">
           <nav className="flex flex-col items-center gap-2">
             <NavLink href="/">Hjem</NavLink>
             <NavLink href="/tjenester">Tjenester</NavLink>
