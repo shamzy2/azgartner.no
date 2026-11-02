@@ -233,7 +233,7 @@ export default function Home() {
       <main className="w-full px-6 md:px-10 lg:px-16 min-[1280px]:px-[70px]! pt-[87px]">
         <section className="flex flex-col gap-24">
           <div className="flex max-w-[960px] flex-col gap-6">
-            <Eyebrow icon="/images/pin.svg">Holder til på Frosta</Eyebrow>
+            <Eyebrow icon="/images/pin.svg">Vi holder til på Frosta</Eyebrow>
             <div className="flex flex-col gap-4">
               <h1 className="text-[48px] leading-[1.08] tracking-[-1.4px] md:text-[64px] md:tracking-[-1.9px] lg:text-[80px] lg:leading-[86.4px] lg:tracking-[-2.4px]">
                 Prosjektering av
