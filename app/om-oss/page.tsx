@@ -184,7 +184,7 @@ export default function OmOssPage() {
           <div className="rounded-lg bg-white p-2">
             <div className="flex flex-col gap-8 px-6 py-10 lg:flex-row lg:items-end lg:justify-between lg:px-10">
               <div className="flex max-w-[600px] flex-col gap-3">
-                <Eyebrow icon="/images/pin.svg">Ta kontakt</Eyebrow>
+                <Eyebrow icon="/images/pin.svg">TA KONTAKT</Eyebrow>
                 <h2 className={`max-w-[520px] ${heading}`}>
                   Har du et prosjekt
                   <br />

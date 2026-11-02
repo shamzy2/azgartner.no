@@ -58,7 +58,7 @@ export default function KontaktPage() {
       <SiteHeader />
       <main className="w-full bg-[#f2f1ed] px-6 md:px-10 lg:px-16 min-[1280px]:px-[70px]!">
         <section className="mx-auto flex max-w-[960px] flex-col items-center gap-4 pt-16 text-center lg:pt-24">
-          <Eyebrow icon="/kontakt/chat.svg">Ta kontakt</Eyebrow>
+          <Eyebrow icon="/kontakt/chat.svg">TA KONTAKT</Eyebrow>
           <div className="flex flex-col items-center gap-4">
             <h1 className="text-[48px] leading-[1.08] tracking-[-1.4px] md:text-[64px] md:tracking-[-1.9px] lg:text-[80px] lg:leading-[86.4px] lg:tracking-[-2.4px]">
               Har du et prosjekt
@@ -105,7 +105,7 @@ export default function KontaktPage() {
         {showForm ? (
           <section id="skjema" className="mt-24 scroll-mt-32">
             <div className="rounded-lg bg-white p-8">
-              <p className={`text-[#007D4B] ${mono}`}>Ta kontakt</p>
+              <p className={`text-[#007D4B] ${mono}`}>TA KONTAKT</p>
               <h2 className="mt-2 text-[40px] leading-[1.08] tracking-[-1.2px]">
                 Vi kan hjelpe
               </h2>
