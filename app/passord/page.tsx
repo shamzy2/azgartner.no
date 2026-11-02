@@ -15,7 +15,7 @@ export default function PasswordPage({
   return (
     <main className="flex min-h-svh items-center justify-center px-6">
       <div className="flex w-full max-w-[420px] flex-col items-center gap-6 text-center">
-        <img src="/images/azgartner.png?v=2" alt="AZ Gartner AS" className="h-20 w-auto" />
+        <img src="/logo.png" alt="AZ Gartner AS" className="h-20 w-auto" />
         <div className="flex flex-col gap-2">
           <h1 className="text-[32px] leading-[1.1] tracking-[-0.8px]">Siden er ikke offentlig ennå</h1>
           <p className="text-[16px] leading-[20.48px] tracking-[-0.32px] text-black/60">

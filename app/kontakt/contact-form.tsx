@@ -26,7 +26,7 @@ export function ContactForm() {
     const topic = String(data.get("topic") || "");
     const message = String(data.get("message") || "");
     const body = `Navn: ${name}\nE-post: ${email}\nTelefon: ${phone}\nHva gjelder det: ${topic}\n\n${message}`;
-    window.location.href = `mailto:azgartneras@gmail.com?subject=${encodeURIComponent("Henvendelse fra nettsiden")}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:knut@azgartner.no?subject=${encodeURIComponent("Henvendelse fra nettsiden")}&body=${encodeURIComponent(body)}`;
   }
 
   return (

@@ -11,7 +11,9 @@ export const descriptions = {
   omOss:
     "AZ Gartner holder til på Frosta. Vi kombinerer faglig kompetanse og praktisk erfaring innen prosjektering av bygg og utomhusanlegg.",
   kontakt:
-    "Ta kontakt med AZ Gartner på Frosta. Ring +47 90 90 01 50, send e-post til azgartneras@gmail.com, eller kom innom Alstadvegen 265.",
+    "Ta kontakt med AZ Gartner på Frosta. Ring +47 90 90 01 50, send e-post til knut@azgartner.no, eller kom innom Alstadvegen 265.",
+  referanser:
+    "Referanser fra AZ Gartner: Statoil Heidrun, Lade Gård for Reitangruppen, prosjektledelse for Jernbaneverket og Statens vegvesen, og prosjektering av næringsbygg og boligbygg.",
 };
 
 export const ogImage = {
@@ -96,8 +98,8 @@ export const businessJsonLd = {
       name: "AZ Gartner AS",
       legalName: "AZ GARTNER AS",
       url: siteUrl,
-      logo: `${siteUrl}/images/azgartner.png`,
-      email: "azgartneras@gmail.com",
+      logo: `${siteUrl}/logo.png`,
+      email: "knut@azgartner.no",
       telephone: "+4790900150",
       identifier: "992542462",
       address,
@@ -117,7 +119,7 @@ export const businessJsonLd = {
       url: siteUrl,
       image: `${siteUrl}/og.jpg`,
       telephone: "+4790900150",
-      email: "azgartneras@gmail.com",
+      email: "knut@azgartner.no",
       address,
       parentOrganization: { "@id": `${siteUrl}/#organization` },
       areaServed: "Norge",

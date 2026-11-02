@@ -55,7 +55,7 @@ function Logo({ className = "h-[72px]" }: { className?: string }) {
   return (
     <a href="/" className="inline-flex shrink-0 items-center">
       <img
-        src="/images/azgartner.png?v=2"
+        src="/logo.png"
         alt="AZ Gartner AS"
         className={`w-auto transition-opacity duration-200 hover:opacity-80 ${className}`}
       />
@@ -65,7 +65,7 @@ function Logo({ className = "h-[72px]" }: { className?: string }) {
 
 const footerColumns = [
   { title: "Meny", links: ["Hjem", "Tjenester", "Om oss", "Kontakt"] },
-  { title: "Kontakt", links: ["+47 90 90 01 50", "azgartneras@gmail.com"] },
+  { title: "Kontakt", links: ["+47 90 90 01 50", "knut@azgartner.no"] },
   { title: "Besøk oss", links: ["Alstadvegen 265", "7633 Frosta"] },
 ];
 
@@ -75,7 +75,7 @@ const footerHref: Record<string, string> = {
   "Om oss": "/om-oss",
   Kontakt: "/kontakt",
   "+47 90 90 01 50": "tel:+4790900150",
-  "azgartneras@gmail.com": "mailto:azgartneras@gmail.com",
+  "knut@azgartner.no": "mailto:knut@azgartner.no",
   "Alstadvegen 265":
     "https://www.google.com/maps/search/?api=1&query=Alstadvegen+265,+7633+Frosta",
   "7633 Frosta":
@@ -117,6 +117,7 @@ export function SiteHeader() {
           <nav className="flex flex-wrap items-center gap-3">
             <NavLink href="/">Hjem</NavLink>
             <NavLink href="/tjenester">Tjenester</NavLink>
+            <NavLink href="/referanser">Referanser</NavLink>
             <NavLink href="/om-oss">Om oss</NavLink>
           </nav>
           <div className="flex flex-wrap items-center gap-5">
@@ -136,6 +137,7 @@ export function SiteHeader() {
           <nav className="flex flex-col items-center gap-2">
             <NavLink href="/">Hjem</NavLink>
             <NavLink href="/tjenester">Tjenester</NavLink>
+            <NavLink href="/referanser">Referanser</NavLink>
             <NavLink href="/om-oss">Om oss</NavLink>
           </nav>
           <a

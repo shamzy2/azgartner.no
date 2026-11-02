@@ -46,9 +46,9 @@ const channels = [
   {
     label: "E-post",
     title: "Send en melding",
-    text: "Skriv til azgartneras@gmail.com, så svarer vi så snart vi kan.",
+    text: "Skriv til knut@azgartner.no, så svarer vi så snart vi kan.",
     action: "Send e-post",
-    href: "mailto:azgartneras@gmail.com",
+    href: "mailto:knut@azgartner.no",
   },
 ];
 

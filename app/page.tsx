@@ -285,7 +285,7 @@ export default function Home() {
 
         <section className="mt-40 flex flex-col items-center text-center">
           <p className={bodyLarge}>Omtalt i</p>
-          <div className="mt-[32px] grid w-full grid-cols-2 items-center justify-items-center md:grid-cols-4">
+          <div className="mt-[32px] grid w-full grid-cols-2 items-center justify-items-center md:grid-cols-3">
             {[
               {
                 src: "/omtalt/bladet.svg",
@@ -298,12 +298,6 @@ export default function Home() {
                 name: "Trønderavisa",
                 href: "https://www.t-a.no/da-de-trengte-mer-plass-falt-valget-pa-helt-spesielle-sovehytter-blir-helt-magisk/s/5-116-1919228",
                 aspect: "aspect-[1333/233]",
-              },
-              {
-                src: "/omtalt/frostingen.svg",
-                name: "Frostingen",
-                href: "https://www.frostingen.no/to-nye-frosta-foretak-har-sett-dagens-lys/s/27-166-7358",
-                aspect: "aspect-[1320/238]",
               },
               {
                 src: "/omtalt/Adresseavisen.svg",
