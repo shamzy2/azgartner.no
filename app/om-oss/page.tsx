@@ -53,7 +53,7 @@ function Eyebrow({ icon, children }: { icon: string; children: ReactNode }) {
 const stories = [
   {
     icon: "/omoss/pin.svg",
-    label: "Vi holder til på Frosta",
+    label: "Holder til på Frosta",
     text: "Hos AZ Gartner kombinerer vi faglig kompetanse med praktisk erfaring innen prosjektering av bygg og utomhusanlegg. Vi legger vekt på kvalitet, nøyaktighet og løsninger tilpasset hvert prosjekt.",
   },
   {
