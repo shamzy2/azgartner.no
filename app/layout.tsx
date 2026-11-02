@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Host_Grotesk, IBM_Plex_Mono } from "next/font/google";
+import { EditBridge } from "../components/edit-bridge";
 import { JsonLd } from "../components/json-ld";
 import { businessJsonLd, descriptions, homeTitle, ogImage, siteUrl } from "../lib/site";
 import "./globals.css";
@@ -64,6 +65,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="nb" className={`${hostGrotesk.variable} ${ibmPlexMono.variable} scroll-smooth`}>
       <body className="bg-[#f2f1ed] font-[family-name:var(--font-host)] text-[#141414] antialiased">
         <JsonLd data={businessJsonLd} />
+        <EditBridge />
         {children}
       </body>
     </html>
