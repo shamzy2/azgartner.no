@@ -4,7 +4,20 @@ import { unlockSite } from "./actions";
 
 export const metadata: Metadata = {
   title: "Passord",
-  robots: { index: false, follow: false },
+  description: "Siden er ikke offentlig ennå. Skriv inn passordet for å se nettsiden.",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: { index: false, follow: false },
+  },
+  openGraph: {
+    title: "Passord | AZ Gartner",
+    description: "Siden er ikke offentlig ennå. Skriv inn passordet for å se nettsiden.",
+  },
+  twitter: {
+    title: "Passord | AZ Gartner",
+    description: "Siden er ikke offentlig ennå. Skriv inn passordet for å se nettsiden.",
+  },
 };
 
 export default function PasswordPage({

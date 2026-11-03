@@ -39,6 +39,7 @@ const mono =
 const pages = [
   { href: "/", label: "Hjem" },
   { href: "/tjenester", label: "Tjenester" },
+  { href: "/referanser", label: "Referanser" },
   { href: "/om-oss", label: "Om oss" },
   { href: "/kontakt", label: "Kontakt" },
 ];

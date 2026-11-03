@@ -85,8 +85,9 @@ export default function TjenesterPage() {
           <div className="grid gap-6 md:grid-cols-2">
             {services.map((service) => (
               <article
+                id={service.slug}
                 key={service.title}
-                className="flex flex-col gap-[7px] rounded-lg bg-white p-8"
+                className="flex scroll-mt-32 flex-col gap-[7px] rounded-lg bg-white p-8"
               >
                 <h2 className="text-[24px] leading-[25.92px] tracking-[-0.72px]">
                   {service.title}
@@ -145,7 +146,7 @@ export default function TjenesterPage() {
               />
             </div>
             <p className={`px-4 py-3 text-black/60 ${body}`}>
-              Kreditering: Trønder-Avisa · Opphavsperson: Roar A. Fordal · Vi må spørre Trønder-Avisa om lov til å bruke bildet
+              Kreditering: Trønder-Avisa · Opphavsperson: Roar A. Fordal
             </p>
           </div>
         </section>

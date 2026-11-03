@@ -23,32 +23,44 @@ export const ogImage = {
   alt: "Mann i arbeidsklær ved gravemaskiner på en anleggsplass ved fjorden.",
 };
 
+export const officeMapUrl =
+  "https://www.google.com/maps/search/?api=1&query=Alstadvegen+265,+7633+Frosta";
+
+const norway = { "@type": "Country", name: "Norge" };
+
 export const services = [
   {
+    slug: "hagedesign",
     title: "Hagedesign",
     text: "Vi prosjekterer og designer bygg og utomhus arealer i en harmonisk helhet. Spennende elementer plassert i anlegget. Vi designer i 3D.",
   },
   {
+    slug: "byggesoknader",
     title: "Byggesøknader",
     text: "Vi er ansvarlig søker for alle typer tiltak, bygg, veger, utomhus. Vi tegner i 3D.",
   },
   {
+    slug: "gps-tjenester",
     title: "GPS tjenester",
     text: "Inn og utmåling av tiltak, bygg, veger, rørledninger. FVD dokumentasjon.",
   },
   {
+    slug: "prosjektering",
     title: "Prosjektering",
     text: "Vi tegner og prosjekterer hytter og hus, veger og utomhusanlegg. Visning i 3D.",
   },
   {
+    slug: "miljokartlegging",
     title: "Miljøkartlegging/avfallsplaner",
     text: "Vi kartlegger og utformer miljøkartlegging ved riving av hus. Vi utformer avfallsplaner til søknader/tiltak.",
   },
   {
+    slug: "hus-og-hytter",
     title: "Hus og hytter",
     text: "Vi tegner hus og hytter med utomhusanlegg. Tegner i 3D. BIM.",
   },
   {
+    slug: "reguleringsplaner",
     title: "Reguleringsplaner",
     text: "Vi lager reguleringsplaner, detaljplanlegging, planbeskrivelser, planbestemmelser, ROS analyse, plankart.",
   },
@@ -98,9 +110,15 @@ export const businessJsonLd = {
       name: "AZ Gartner AS",
       legalName: "AZ GARTNER AS",
       url: siteUrl,
-      logo: `${siteUrl}/logo.png`,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/logo.png`,
+        width: 841,
+        height: 281,
+      },
       email: "knut@azgartner.no",
       telephone: "+4790900150",
+      taxID: "992542462",
       identifier: "992542462",
       address,
     },
@@ -120,9 +138,32 @@ export const businessJsonLd = {
       image: `${siteUrl}/og.jpg`,
       telephone: "+4790900150",
       email: "knut@azgartner.no",
+      taxID: "992542462",
       address,
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 63.580232,
+        longitude: 10.715951,
+      },
+      hasMap: officeMapUrl,
       parentOrganization: { "@id": `${siteUrl}/#organization` },
-      areaServed: "Norge",
+      areaServed: norway,
+      hasCredential: [
+        {
+          "@type": "EducationalOccupationalCredential",
+          name: "Godkjent mesterbedrift innen anleggsgartnerfaget",
+          url: "https://mesterregister.mesterbrev.no/bedrifter/1608",
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          name: "Sentral godkjenning",
+          url: "https://sgregister.dibk.no/enterprises/992542462",
+          recognizedBy: {
+            "@type": "GovernmentOrganization",
+            name: "Direktoratet for byggkvalitet",
+          },
+        },
+      ],
     },
   ],
 };
@@ -131,6 +172,7 @@ export function faqJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": `${siteUrl}/#faq`,
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.q,
@@ -154,9 +196,10 @@ export function servicesJsonLd() {
         "@type": "Service",
         name: service.title,
         description: service.text,
-        url: `${siteUrl}/tjenester`,
+        "@id": `${siteUrl}/tjenester#${service.slug}`,
+        url: `${siteUrl}/tjenester#${service.slug}`,
         provider: { "@id": `${siteUrl}/#business` },
-        areaServed: "Norge",
+        areaServed: norway,
       },
     })),
   };
@@ -190,6 +233,7 @@ export function pageMetadata({
       images: [ogImage],
     },
     twitter: {
+      card: "summary_large_image",
       title: fullTitle,
       description,
       images: [ogImage.url],

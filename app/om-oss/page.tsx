@@ -129,10 +129,10 @@ export default function OmOssPage() {
             {stories.map((story) => (
               <article
                 key={story.label}
-                className="flex min-h-[275px] flex-col justify-between rounded-lg bg-white p-8"
+                className="flex flex-col gap-4 rounded-lg bg-white p-8"
               >
                 <Eyebrow icon={story.icon}>{story.label}</Eyebrow>
-                <p className={`mt-10 max-w-[360px] ${body}`}>{story.text}</p>
+                <p className={`max-w-[360px] ${body}`}>{story.text}</p>
               </article>
             ))}
           </div>
@@ -210,7 +210,7 @@ export default function OmOssPage() {
               />
             </div>
             <p className={`px-4 py-3 text-black/60 ${body}`}>
-              Kreditering: Trønder-Avisa · Opphavsperson: Roar A. Fordal · Vi må spørre Trønder-Avisa om lov til å bruke bildet
+              Kreditering: Trønder-Avisa · Opphavsperson: Roar A. Fordal
             </p>
           </div>
         </section>

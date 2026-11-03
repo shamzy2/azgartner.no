@@ -64,7 +64,7 @@ function Logo({ className = "h-[72px]" }: { className?: string }) {
 }
 
 const footerColumns = [
-  { title: "Meny", links: ["Hjem", "Tjenester", "Om oss", "Kontakt"] },
+  { title: "Meny", links: ["Hjem", "Tjenester", "Referanser", "Om oss", "Kontakt"] },
   { title: "Kontakt", links: ["+47 90 90 01 50", "knut@azgartner.no"] },
   { title: "Besøk oss", links: ["Alstadvegen 265", "7633 Frosta"] },
 ];
@@ -72,6 +72,7 @@ const footerColumns = [
 const footerHref: Record<string, string> = {
   Hjem: "/",
   Tjenester: "/tjenester",
+  Referanser: "/referanser",
   "Om oss": "/om-oss",
   Kontakt: "/kontakt",
   "+47 90 90 01 50": "tel:+4790900150",

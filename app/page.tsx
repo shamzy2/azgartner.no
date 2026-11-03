@@ -71,18 +71,21 @@ function Eyebrow({ icon, children }: { icon: string; children: ReactNode }) {
 const devices = [
   {
     title: "Byggesøknader",
+    href: "/tjenester#byggesoknader",
     text: "Vi hjelper deg med søknadsprosessen for\nbyggeprosjekter.",
     image: "/hero/byggesøknader.jpg",
     alt: "Person som tegner plantegninger ved et skrivebord.",
   },
   {
     title: "Søker for alle tiltak",
+    href: "/tjenester#byggesoknader",
     text: "Vi tar hånd om søknadsprosessen for alle typer landskapsprosjekter.",
     image: "/images/tablet.png",
     alt: "Nettbrett som står på et hvitt bord, med fargerike appikoner på skjermen.",
   },
   {
     title: "Prosjektering",
+    href: "/tjenester#prosjektering",
     text: "Vi designer tilpassede landskap som realiserer\ndine visjoner.",
     image: "/hero/landskap.jpg",
     alt: "Gårdsrom mellom moderne bygg, med blomsterbed og en steinlagt plass.",
@@ -273,7 +276,12 @@ export default function Home() {
                   </div>
                   <div>
                     <h2 className="text-[24px] leading-[25.92px] tracking-[-0.72px]">
-                      {device.title}
+                      <a
+                        href={device.href}
+                        className="transition-colors duration-200 hover:text-[#007D4B]"
+                      >
+                        {device.title}
+                      </a>
                     </h2>
                     <p className={`whitespace-pre-line text-black/60 ${body}`}>{device.text}</p>
                   </div>
@@ -553,7 +561,7 @@ export default function Home() {
               />
             </div>
             <p className={`px-4 py-3 text-black/60 ${body}`}>
-              Kreditering: Trønder-Avisa · Opphavsperson: Roar A. Fordal · Vi må spørre Trønder-Avisa om lov til å bruke bildet
+              Kreditering: Trønder-Avisa · Opphavsperson: Roar A. Fordal
             </p>
           </div>
         </section>
