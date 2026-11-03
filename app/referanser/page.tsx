@@ -12,6 +12,8 @@ const bodyLarge = "text-[18px] leading-[21.6px] tracking-[-0.36px]";
 const mono =
   "font-[family-name:var(--font-mono)] text-[14px] uppercase leading-[20.48px] tracking-[-0.32px]";
 
+const showLogo = false;
+
 const references = [
   {
     label: "UTF",
@@ -58,9 +60,11 @@ export default function ReferanserPage() {
               key={item.title}
               className="flex items-center gap-5 rounded-lg bg-white p-4 sm:gap-8 sm:p-6"
             >
-              <div className="flex h-16 w-24 shrink-0 items-center justify-center rounded-md bg-[#f2f1ed] px-2 text-center text-[10px] leading-[12px] tracking-[-0.1px] text-black/40 sm:h-20 sm:w-32">
-                her kommer logo
-              </div>
+              {showLogo ? (
+                <div className="flex h-16 w-24 shrink-0 items-center justify-center rounded-md bg-[#f2f1ed] px-2 text-center text-[10px] leading-[12px] tracking-[-0.1px] text-black/40 sm:h-20 sm:w-32">
+                  her kommer logo
+                </div>
+              ) : null}
               <div className="min-w-0">
                 {item.label ? (
                   <p className={`text-[#007D4B] ${mono}`}>{item.label}</p>
